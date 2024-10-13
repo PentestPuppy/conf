@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# Courtesy @__Mastodon
+#
+
 echo -e "${CYAN}[+] Installing latest Tmux from source... ${C}" && \
 apt-get -yqq remove tmux && \
 apt-get -yqq install libevent-dev ncurses-dev build-essential bison pkg-config automake && \
