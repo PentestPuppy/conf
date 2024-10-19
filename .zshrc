@@ -10,7 +10,7 @@ tild="%B%F{red}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.green)}]"
 veryend="└$venv%F{%(#.green)}─#%F{reset} "
 
 
-PROMPT="$strt2$timestamp$rootat$tild
+PROMPT="$strt$timestamp$rootat$tild
 $veryend"
 
 
