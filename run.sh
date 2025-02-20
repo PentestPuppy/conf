@@ -23,3 +23,11 @@ printf "\e[1;36m-- . -- . -- FINISHED TMUX INSTALL"
 
 source '~/.zshrc'
 
+# Set up proj directories
+cd /root
+mkdir $1
+cd $1
+mkdir nmap recon web creds cloud
+
+# Create tmux session
+tmux new -t $1
