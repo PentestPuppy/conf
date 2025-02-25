@@ -5,6 +5,12 @@ tmux_script='/root/conf/tmux.sh'
 tmux_conf='/root/conf/.tmux.conf'
 zsh_rc='/root/conf/.zshrc'
 
+# Make sure we gave the flags for creating proj directory
+if [[ -z $1 ]]; then
+	echo "Please specify the project name! i.e. bash run.sh 'client'"
+	exit 2
+fi
+
 printf "\e[1;36m-- . -- . -- APT UPDATE/ UPGRADE \e[m"
 
 cd ~/ && \
