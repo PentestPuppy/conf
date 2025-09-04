@@ -62,5 +62,8 @@ cd theHarvester
 pip install -r requirements.txt && sleep 3
 
 printf "\e[1;36m-- . -- . -- STARTING TMUX SESSION \e [m"
+# Make sure we start in the right directory
+cd /root/$1
+
 # Create tmux session
 tmux new -t $1
